@@ -24,9 +24,14 @@ const Cities = () => {
         },
     ]
     return (
-      <div className="flex justify-around my-6">
+      <div className="flex justify-around my-6 ">
         {cities.map((city) => (
-          <button key={city.id} className='text-white text-lg font-medium'>{city.title}</button>
+          <button
+            key={city.id}
+            className="text-white text-xl font-medium transition ease-out hover:scale-125"
+          >
+            {city.title}
+          </button>
         ))}
       </div>
     );

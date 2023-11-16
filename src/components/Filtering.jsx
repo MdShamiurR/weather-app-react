@@ -22,12 +22,18 @@ const Filtering = () => {
           </div>
         </div>
 
-        <div className="flex flex-row w-1/4 items-center justify-center">
-          <button name="metric" className="text-2xl text-blue-700 font-bold">
+        <div className="flex flex-row w-1/4 items-center justify-center ">
+          <button
+            name="metric"
+            className="text-2xl text-blue-700 font-bold transition ease-out hover:scale-125"
+          >
             °C
           </button>
           <p className="text-3xl mx-1">|</p>
-          <button name="imperial" className="text-2xl text-blue-700 font-bold">
+          <button
+            name="imperial"
+            className="text-2xl text-blue-700 font-bold transition ease-out hover:scale-125"
+          >
             °F
           </button>
         </div>

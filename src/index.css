@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Montserrat:ital@1&family=Roboto:ital,wght@1,500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Dosis", sans-serif;
+  }
+}
