@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+## Objective:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-To create a weather dashboard that allows users to search for the weather forecast for a specific
+location. The application should display current weather conditions, as well as a 5-day forecast.
+Additionally,include a visual representation of the forecast data, such as a line chart or bargraph.
 
-## Available Scripts
+## Task Requirements:
 
-In the project directory, you can run:
+1.Weather Data:
 
-### `npm start`
+- [DONE] Integrate with a weather API to retrieve weather information.
+- [DONE] Display the current weather conditions for a specified location.
+  2.5-Day Forecast:
+- [DONE] Display a 5-day weather forecast, including highs and lows for each day.
+  3.Search Functionality:
+- [DONE] Allow users to search for the weather forecast of different locations.
+- [DONE] Implement error handling for invalid or non-existent locations.
+  4.Data Visualization:
+- [DONE] Create a visual representation of the weather forecast data.
+  5.Responsive Design:
+- [DONE] responsive and provides a good user experience on various devices.
+  6.Loading State:
+- [DONE] Implement loading states to provide feedback to users while waiting for the
+  weather data to load.
+  7.Error Handling:
+- [DONE] Handle API request errors gracefully and provide clear error messages to users.
+  8.Code Quality:
+- [DONE] Write clean, modular, and well-documented code.
+- [DONE] Use React best practices and hooks..
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Additional Task:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [DONE] User Location Detection , Celsius and Fahrenheit Value
+- [DONE] React-Toastify
 
-### `npm test`
+## Project Live LinK
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Weather Dashboard](https://sr07weather.netlify.app/) or
+- https://sr07weather.netlify.app/
+- If you face Deceptive Site issue after clicking the link:
+  - Click on "Details"
+  - Then click on " Visit this unsafe site"
 
-### `npm run build`
+## How to Run the projejct:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Clone the project from GitHub](https://github.com/MdShamiurR/weather-app-react)
+- Go to the folder
+- Run with VSCode
+- Open Terminal--> "npm install"
+- --> "npm start"
+- API is already given.
