@@ -2,8 +2,6 @@ import React from 'react';
 import { formatToLocalTime } from '../service/service';
 
 const TimeTables = ({ weather: { dt, timezone, name, country } }) => {
-  // const {dt,timezone,name,country} = weather;
-  console.log(country);
   return (
     <div>
       <div className="text-center my-6">
