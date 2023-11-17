@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import img from '../../weather-app-react/src/image/7266036c9f3383d21730484150602f01.gif';
 import './App.css';
@@ -41,7 +42,7 @@ function App() {
     <div>
       {
         loading ? <div className="flex items-center justify-center h-screen">
-  <img src={img}></img>
+  <img src={img} alt="Loading animation"></img>
 </div> : <div className={`mx-auto max-w-screen-md  px-4 pt-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 pb-16 bg-gradient-to-br from-zinc-700 to-black h-fit shadow-xl shadow-gray-400 rounded-md ${formatBackground()}`}>
   <Cities setQuery={setQuery}></Cities>
   <Filtering setQuery={setQuery} units={units} setUnits={setUnits}></Filtering>
@@ -54,7 +55,18 @@ function App() {
   )}
 </div>
       }
-    
+      <ToastContainer
+position="bottom-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+/>
     </div>
   );
 }

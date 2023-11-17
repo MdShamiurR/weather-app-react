@@ -2,6 +2,7 @@
 
 import { UilTelescope, UilUserLocation } from "@iconscout/react-unicons";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import { API_KEY } from "../service/service";
 
 const Filtering = ({ setQuery, units, setUnits }) => {
@@ -16,8 +17,30 @@ const Filtering = ({ setQuery, units, setUnits }) => {
           `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
         );
         if (!response.ok) {
-          setError("Invalid city. Please enter a valid city name.");
+          // setError("Invalid city. Please enter a valid city name.");
+          toast.error(`Invalid ${city}. Please enter a valid city name.`, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
           return;
+        }
+        else{
+          toast.success(`${city.toUpperCase()} Successfully Retrived`, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
 
         const data = await response.json();
@@ -44,7 +67,20 @@ const Filtering = ({ setQuery, units, setUnits }) => {
             );
             if (!response.ok) {
               // Handle the case where the API request was not successful
-              setError("Unable to retrieve weather data for your location.");
+              // setError("Unable to retrieve weather data for your location.");
+              toast.error(
+                "🦄 Unable to retrieve weather data for your location!",
+                {
+                  position: "bottom-right",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "dark",
+                }
+              );
               return;
             }
 
